@@ -1,0 +1,47 @@
+.morabian {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 15%;
+  text-align: center;
+  gap: 8rem;
+  height: 100vh; */
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  justify-content: space-around;
+  text-align: center;
+}
+.morabi > div {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  background-color: var(--gray);
+  border-radius: 5px;
+  width: 30rem;
+  color: white;
+  cursor: pointer;
+}
+.morabi > div:hover {
+  background: var(--planCard);
+}
+/* h2{
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+} */
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 3rem;
+  color: white;
+  font-size: 2rem;
+}
+.nav > i {
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.nav > i:hover {
+  color: var(--orange);
+}

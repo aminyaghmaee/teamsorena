@@ -1,0 +1,29 @@
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3rem;
+    list-style: none;
+    
+}
+.icons {
+    font-size: 5rem;
+    color: var(--gray);
+    cursor: pointer;
+}
+.icons:hover{
+    color: var(--orange);
+}
+.footer-blur{
+width: 80rem;
+height: 20rem;
+top: 130rem;
+right: 18%;
+}
+@media screen and (max-width : 768px) {
+    ul{
+display: flex;
+justify-content: space-between;
+margin: 2rem;
+    }
+}

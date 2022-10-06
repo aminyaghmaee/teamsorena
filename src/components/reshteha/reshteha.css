@@ -1,0 +1,25 @@
+.reshteha {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  justify-content: space-around;
+  text-align: center;
+}
+.reshte {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  padding: 1rem;
+  background-color: var(--gray);
+  border-radius: 5px;
+  width: 30rem;
+  height: 10rem;
+  color: white;
+  cursor: pointer;
+  font-size: 3.3rem;
+}
+.reshte:hover {
+  background: var(--planCard);
+  transform: scale(1.1);
+  transition: 1s; 
+}
