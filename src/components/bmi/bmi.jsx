@@ -3,7 +3,6 @@ import "./bmi.css";
 import { useRef } from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { type } from "@testing-library/user-event/dist/type";
 
 const Bmi = ({ setOpen, setResult, setIdeal, setShakhes, setJomle }) => {
   const navigate = useNavigate();
@@ -56,10 +55,10 @@ const Bmi = ({ setOpen, setResult, setIdeal, setShakhes, setJomle }) => {
 
   return (
     <div className="fixed">
-      <i className="fa fa-times"></i>
       <form action="#" className="form">
+        <i onClick={()=>navigate("/")} className="fa fa-times times-icon"></i>
         <label htmlFor="height">قد(سانتیمتر)</label>
-        <input ref={height} type="number" name="height"/>
+        <input ref={height} type="number" name="height" />
         <label htmlFor="weight">وزن(کیلوگرم)</label>
         <input ref={weight} type="number" name="weight" />
         <div className="gender">

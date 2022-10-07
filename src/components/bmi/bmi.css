@@ -35,3 +35,9 @@
 .link>input{
     cursor: pointer;
 }
+.times-icon{
+  color: white;
+  position: absolute;
+  right: 2rem;
+  cursor: pointer;
+}

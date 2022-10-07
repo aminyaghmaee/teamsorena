@@ -8,6 +8,8 @@ import Morabian from "./components/morabian/morabian";
 import Login from "./components/login.form/login";
 import Signup from "./components/signup/signup";
 import Reshteha from "./components/reshteha/reshteha";
+import Barnameha from "./components/barnameha/barnameha";
+import Qazai from "./components/qazai/qazai";
 function App() {
   const [result, setResult] = useState("?");
   const [ideal, setIdeal] = useState("?");
@@ -45,6 +47,8 @@ function App() {
         />
         <Route path="/morabian" element={<Morabian />} />
         <Route path= "/reshteha" element={<Reshteha/>}/>
+        <Route path= "/barnameha" element={<Barnameha/>}/>
+        <Route path= "/qazai" element={<Qazai/>}/>
       </Routes>
     </div>
   );

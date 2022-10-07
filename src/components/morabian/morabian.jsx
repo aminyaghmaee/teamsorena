@@ -2,70 +2,88 @@ import React from "react";
 import { useState } from "react";
 import "./morabian.css";
 import { useNavigate } from "react-router-dom";
+import woman from "../../data/woman-img.jpg";
 
 const Morabian = () => {
-const navigate = useNavigate();
+  const navigate = useNavigate();
   const [morabi, setMorabi] = useState([
     {
-      name: "hoseini",
-      age: 22,
-      email: "hoseini@yahoo.com",
+      name: "امین یوسف فرد",
+      age: "۲۶",
+      phoneNumber: "۰۹۳۵۰۷۳۹۳۷۴",
+      imageId: woman,
     },
     {
-      name: "rezai",
-      age: 46,
-      email: "rezai@yahoo.com",
+      name: "امین یوسف فرد",
+      age: "۲۶",
+      phoneNumber: "۰۹۳۵۰۷۳۹۳۷۴",
+      imageId: woman,
     },
     {
-      name: "alavi",
-      age: 38,
-      email: "alavi@yahoo.com",
+      name: "امین یوسف فرد",
+      age: "۲۶",
+      phoneNumber: "۰۹۳۵۰۷۳۹۳۷۴",
+      imageId: woman,
     },
     {
-      name: "alavi",
-      age: 38,
-      email: "alavi@yahoo.com",
+      name: "امین یوسف فرد",
+      age: "۲۶",
+      phoneNumber: "۰۹۳۵۰۷۳۹۳۷۴",
+      imageId: woman,
     },
     {
-      name: "alavi",
-      age: 38,
-      email: "alavi@yahoo.com",
+      name: "امین یوسف فرد",
+      age: "۲۶",
+      phoneNumber: "۰۹۳۵۰۷۳۹۳۷۴",
+      imageId: woman,
     },
     {
-      name: "alavi",
-      age: 38,
-      email: "alavi@yahoo.com",
+      name: "امین یوسف فرد",
+      age: "۲۶",
+      phoneNumber: "۰۹۳۵۰۷۳۹۳۷۴",
+      imageId: woman,
     },
     {
-      name: "alavi",
-      age: 38,
-      email: "alavi@yahoo.com",
+      name: "امین یوسف فرد",
+      age: "۲۶",
+      phoneNumber: "۰۹۳۵۰۷۳۹۳۷۴",
+      imageId: woman,
     },
     {
-      name: "alavi",
-      age: 38,
-      email: "alavi@yahoo.com",
+      name: "امین یوسف فرد",
+      age: "۲۶",
+      phoneNumber: "۰۹۳۵۰۷۳۹۳۷۴",
+      imageId: woman,
     },
     {
-      name: "alavi",
-      age: 38,
-      email: "alavi@yahoo.com",
-    }
+      name: "امین یوسف فرد",
+      age: "۲۶",
+      phoneNumber: "۰۹۳۵۰۷۳۹۳۷۴",
+      imageId: woman,
+    },
   ]);
   return (
     <>
       <div className="nav">
         <h2>باشگاه مربیان تیم سورنا</h2>
-        <i onClick={()=>{navigate('/')}} className="fa fa-home"></i>
+        <i
+          onClick={() => {
+            navigate("/");
+          }}
+          className="fa fa-home"
+        ></i>
       </div>
       <div className="morabian">
         {morabi.map((e) => {
           return (
             <div className="morabi">
               <div>
+                <div>
+                  <img className="morabi-img" src={e.imageId} alt="" />
+                </div>
+                <span className="age"> سن: {e.age}</span>
                 <h4>{e.name}</h4>
-                <span>{e.age}</span>
-                <h5>{e.email}</h5>
+                <h5>شماره تماس: {e.phoneNumber}</h5>
               </div>
             </div>
           );
