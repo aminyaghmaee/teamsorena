@@ -26,6 +26,9 @@ display: flex;
 justify-content: space-between;
 margin: 2rem;
     }
+    .footer-blur{
+        display: none;
+    }
 }
 a{
     text-decoration: none;
