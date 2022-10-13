@@ -24,42 +24,48 @@ const Header = () => {
         <ul className="header-menu">
           <li className="home-icon">
             <Link
+              classname="nav-hover"
               onClick={() => setMenuOpened(false)}
               to="home"
               span={true}
               smooth={true}
             >
-             <i className="fa fa-home"></i>
+              <h3 className="h3-nav"><i className="fa fa-home"></i></h3>
             </Link>
           </li>
           <li>
             <Link
+              classname="nav-hover"
               onClick={() => setMenuOpened(false)}
               to="footer"
               span={true}
               smooth={true}
             >
-              ارتباط با ما
+              <h3 className="h3-nav">ارتباط با ما</h3>
             </Link>
           </li>
-          <li onClick={() => setMenuOpened(false)}>سوالات متداول</li>
+          <li onClick={() => setMenuOpened(false)}><h3 className="h3-nav">سوالات متداول</h3></li>
           <li>
             <Link
+              classname="nav-hover"
               onClick={() => setMenuOpened(false)}
               to="about"
               span={true}
               smooth={true}
             >
-              درباره ما
+              <h3 className="h3-nav">ارتباط با ما</h3>
             </Link>
           </li>
           <li>
             <Link
+              classname="nav-hover"
               onClick={() => setMenuOpened(false)}
               to="program"
               span={true}
               smooth={true}
-            >خدمات ما</Link>
+            >
+              <h3 className="h3-nav">خدمات ما</h3>
+            </Link>
           </li>
         </ul>
       )}

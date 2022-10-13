@@ -11,6 +11,9 @@ ul{
     color: var(--gray);
     cursor: pointer;
 }
+#footer > ul > li > a{
+    font-size: 5rem;
+}
 .icons:hover{
     color: var(--orange);
 }

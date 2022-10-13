@@ -16,7 +16,9 @@ const Footer = () => {
           </a>
         </li>
         <li>
-          <i className="fa fa-whatsapp icons"></i>
+          <a href="https://web.telegram.org/z/#361011462">
+            <i className="fa fa-whatsapp icons"></i>
+          </a>
         </li>
       </ul>
     </div>

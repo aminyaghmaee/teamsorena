@@ -17,25 +17,30 @@
   display: flex;
   gap: 3rem;
   color: white;
-  right: 40%;
+  right: 35%;
 }
-.header-menu > li:hover {
-  color: var(--orange);
+.header-menu > li {
   cursor: pointer;
 }
+.h3-nav:hover{
+  color: var(--orange);
+}
+.h3-nav {
+  color: white;
+}
+
 .home-icon {
   font-size: 2rem;
   cursor: pointer;
 }
-@media screen and (max-width : 768px) {
-  .header>:nth-child(2){
+@media screen and (max-width: 768px) {
+  .header > :nth-child(2) {
     position: fixed;
     right: 2rem;
     z-index: 99;
     top: 2rem;
-
   }
-  .header-menu{
+  .header-menu {
     flex-direction: column;
     background-color: var(--appColor);
     padding: 2rem;
@@ -43,7 +48,7 @@
   }
   .header {
     z-index: 99;
-  display: flex;
-  align-items: center;
-}
+    display: flex;
+    align-items: center;
+  }
 }
