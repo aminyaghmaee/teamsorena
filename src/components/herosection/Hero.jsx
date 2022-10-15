@@ -14,7 +14,7 @@ const navigate = useNavigate();
         {/* the best ad */}
         <div className="the-best-ad">
           <div></div>
-          <span>برای دریافت برنامه ورزشی فقط کافیه کلیک کنی!</span>
+          <span onClick={()=>{navigate("/morabian")}}>برای دریافت برنامه ورزشی فقط کافیه کلیک کنی!</span>
         </div>
         {/* Hero heading */}
         <div className="hero-text">
@@ -22,7 +22,7 @@ const navigate = useNavigate();
             <span>مربی خودتو انتخاب کن </span>
             <br />
             <span>و رایگان&nbsp;</span>
-            <span className="stroke-text clicked"> مشاوره</span>
+            <span className="stroke-text clicked moshavere-morabi" onClick={()=>{navigate("/morabian")}}> مشاوره</span>
             <span>&nbsp;بگیر</span>
           </div>
         </div>

@@ -81,9 +81,12 @@ const Morabian = () => {
                 <div>
                   <img className="morabi-img" src={e.imageId} alt="" />
                 </div>
-                <span className="age"> سن: {e.age}</span>
-                <h4>{e.name}</h4>
-                <h5>شماره تماس: {e.phoneNumber}</h5>
+                <div className="information-morabi">
+                  <h4>{e.name}</h4>
+                  <span className="age"> سن: {e.age}</span>
+                  <h5>شماره تماس: {e.phoneNumber}</h5>
+                  <button className="goftogo btn">گفتگو</button>
+                </div>
               </div>
             </div>
           );

@@ -58,9 +58,9 @@ const Bmi = ({ setOpen, setResult, setIdeal, setShakhes, setJomle }) => {
       <form action="#" className="form">
         <i onClick={()=>navigate("/")} className="fa fa-times times-icon"></i>
         <label htmlFor="height">قد(سانتیمتر)</label>
-        <input ref={height} type="number" name="height" />
+        <input ref={height} type="number" name="height" required />
         <label htmlFor="weight">وزن(کیلوگرم)</label>
-        <input ref={weight} type="number" name="weight" />
+        <input ref={weight} type="number" name="weight" required />
         <div className="gender">
           <span>جنسیت: &nbsp; </span>
           <label htmlFor="male">مرد</label>

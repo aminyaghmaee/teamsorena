@@ -4,6 +4,8 @@
   height: 100vh;
   justify-content: space-around;
   text-align: center;
+  gap: 2rem;
+
 }
 .reshte {
     display: flex;
@@ -22,4 +24,12 @@
   background: var(--planCard);
   transform: scale(1.1);
   transition: 1s; 
+}
+@media screen and (max-width : 768px) {
+  .reshteha{
+    height: 180rem;
+  }
+  .reshte{
+    width: 25rem;
+  }
 }

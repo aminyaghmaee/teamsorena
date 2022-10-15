@@ -41,3 +41,8 @@
   right: 2rem;
   cursor: pointer;
 }
+@media screen and (max-width : 768px) {
+  .form{
+    left: calc((100% - 20rem)/2);
+  }
+}

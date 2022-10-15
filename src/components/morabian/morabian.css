@@ -21,7 +21,12 @@
   border-radius: 5px;
   width: 30rem;
   color: white;
-  cursor: pointer;
+}
+.information-morabi{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+gap: 0.5rem;
 }
 .morabi-img{
   width: 9rem;
@@ -29,10 +34,10 @@
   border-radius: 50%;
 }
 .age{
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
 }
 .morabi > div:hover {
-  background: var(--planCard);
+  /* background: var(--planCard); */
 }
 /* h2{
     color: white;
@@ -53,4 +58,16 @@
 }
 .nav > i:hover {
   color: var(--orange);
+}
+.goftogo {
+  cursor: pointer;
+}
+.goftogo:hover{
+  color: white;
+  background-color: var(--orange);
+}
+@media screen and (max-width : 768px) {
+  .morabi > div{
+width: 23rem;
+  }
 }
