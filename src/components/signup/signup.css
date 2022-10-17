@@ -1,11 +1,11 @@
 .container {
-  height: 100vh;
+  height: 50rem;
 }
 
 .box {
   position: relative;
   right: 39%;
-  top: 10rem;
+  top: 20%;
   width: 27rem;
   height: 30rem;
   background-color: var(--grey);
