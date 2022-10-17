@@ -22,18 +22,18 @@
   width: 30rem;
   color: white;
 }
-.information-morabi{
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-gap: 0.5rem;
+.information-morabi {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 0.5rem;
 }
-.morabi-img{
+.morabi-img {
   width: 9rem;
   height: 9rem;
   border-radius: 50%;
 }
-.age{
+.age {
   /* margin-top: 4rem; */
 }
 .morabi > div:hover {
@@ -62,12 +62,12 @@ gap: 0.5rem;
 .goftogo {
   cursor: pointer;
 }
-.goftogo:hover{
+.goftogo:hover {
   color: white;
   background-color: var(--orange);
 }
-@media screen and (max-width : 768px) {
-  .morabi > div{
-width: 23rem;
+@media screen and (max-width: 768px) {
+  .morabi > div {
+    width: 23rem;
   }
 }
