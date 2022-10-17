@@ -8,6 +8,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  height: 100vh;
   text-align: center;
   gap: 2rem;
 }
@@ -32,17 +33,7 @@
   height: 9rem;
   border-radius: 50%;
 }
-.age {
-  /* margin-top: 4rem; */
-}
-.morabi > div:hover {
-  /* background: var(--planCard); */
-}
-/* h2{
-    color: white;
-    text-align: center;
-    margin-top: 2rem;
-} */
+
 .nav {
   display: flex;
   flex-direction: row;
@@ -66,6 +57,10 @@
   background-color: var(--orange);
 }
 @media screen and (max-width: 768px) {
+  .morabian{
+    height: auto;
+  }
+  
   .morabi > div {
     width: 23rem;
   }

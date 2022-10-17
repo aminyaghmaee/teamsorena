@@ -1,5 +1,5 @@
 .container {
-  
+  height: 100vh;
 }
 
 .box {
@@ -169,10 +169,15 @@ cursor: pointer;
   margin-top: 0.3rem;
 }
 @media screen and (max-width: 768px) {
-
+.container{
+  height: auto;
+}
   .box{
+    top: 20%;
     width: 22rem;
     right: calc((100% - 22rem)/2);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
   .submit-input{
   margin-right: 30%;
