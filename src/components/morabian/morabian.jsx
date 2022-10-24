@@ -2,64 +2,63 @@ import React from "react";
 import { useState } from "react";
 import "./morabian.css";
 import { useNavigate } from "react-router-dom";
-import woman from "../../data/woman-img.jpg";
-
+import yoseffard from "../../data/yoseffard.jpg";
 const Morabian = () => {
   const navigate = useNavigate();
   const [morabi, setMorabi] = useState([
     {
       name: "امین یوسف فرد",
       age: "۲۶",
-      phoneNumber: "۰۹۳۵۰۷۳۹۳۷۴",
-      imageId: woman,
+      phoneNumber: "9350739374",
+      imageId: yoseffard,
     },
     {
       name: "امین یوسف فرد",
       age: "۲۶",
-      phoneNumber: "۰۹۳۵۰۷۳۹۳۷۴",
-      imageId: woman,
+      phoneNumber: "9350739374",
+      imageId: yoseffard,
     },
     {
       name: "امین یوسف فرد",
       age: "۲۶",
-      phoneNumber: "۰۹۳۵۰۷۳۹۳۷۴",
-      imageId: woman,
+      phoneNumber: "9350739374",
+      imageId: yoseffard,
     },
     {
       name: "امین یوسف فرد",
       age: "۲۶",
-      phoneNumber: "۰۹۳۵۰۷۳۹۳۷۴",
-      imageId: woman,
+      phoneNumber: "9350739374",
+      imageId: yoseffard,
     },
     {
       name: "امین یوسف فرد",
       age: "۲۶",
-      phoneNumber: "۰۹۳۵۰۷۳۹۳۷۴",
-      imageId: woman,
+      phoneNumber: "9350739374",
+      imageId: yoseffard,
     },
     {
       name: "امین یوسف فرد",
       age: "۲۶",
-      phoneNumber: "۰۹۳۵۰۷۳۹۳۷۴",
-      imageId: woman,
+      phoneNumber: "9350739374",
+      imageId: yoseffard,
     },
     {
       name: "امین یوسف فرد",
       age: "۲۶",
-      phoneNumber: "۰۹۳۵۰۷۳۹۳۷۴",
-      imageId: woman,
+      phoneNumber: "9350739374",
+      imageId: yoseffard,
     },
     {
       name: "امین یوسف فرد",
       age: "۲۶",
-      phoneNumber: "۰۹۳۵۰۷۳۹۳۷۴",
-      imageId: woman,
+      phoneNumber: "9350739374",
+      imageId: yoseffard,
     },
     {
       name: "امین یوسف فرد",
       age: "۲۶",
-      phoneNumber: "۰۹۳۵۰۷۳۹۳۷۴",
-      imageId: woman,
+      phoneNumber: "9350739374",
+      imageId: yoseffard,
     },
   ]);
   return (
@@ -85,7 +84,12 @@ const Morabian = () => {
                   <h4>{e.name}</h4>
                   <span className="age"> سن: {e.age}</span>
                   <h5>شماره تماس: {e.phoneNumber}</h5>
-                  <button className="goftogo btn">گفتگو</button>
+                  <a
+                    className="without-link btn goftogo"
+                    href={`https://wa.me/+98${e.phoneNumber}`}
+                  >
+                    <span className="">گفتگو</span>
+                  </a>
                 </div>
               </div>
             </div>

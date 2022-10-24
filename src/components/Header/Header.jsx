@@ -30,7 +30,9 @@ const Header = () => {
               span={true}
               smooth={true}
             >
-              <h3 className="h3-nav"><i className="fa fa-home"></i></h3>
+              <h3 className="h3-nav">
+                <i className="fa fa-home"></i>
+              </h3>
             </Link>
           </li>
           <li>
@@ -44,7 +46,9 @@ const Header = () => {
               <h3 className="h3-nav">ارتباط با ما</h3>
             </Link>
           </li>
-          <li onClick={() => setMenuOpened(false)}><h3 className="h3-nav">سوالات متداول</h3></li>
+          <li onClick={() => setMenuOpened(false)}>
+            <h3 className="h3-nav">سوالات متداول</h3>
+          </li>
           <li>
             <Link
               classname="nav-hover"
@@ -71,6 +75,7 @@ const Header = () => {
       )}
     </div>
   );
+  
 };
 
 export default Header;

@@ -12,20 +12,19 @@ const Login = () => {
       .string()
       .required("رمز عبور حتما وارد شود")
       .min(4, "رمز عبور حداقل باید 4 کارکتر باشد")
-      .max(10,"رمز عبور حداکثر باید 10 کارکتر باشد")
+      .max(10, "رمز عبور حداکثر باید 10 کارکتر باشد"),
   });
   const navigate = useNavigate();
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm({
-    resolver: yupResolver(schema),
-  });
+    reset,
+  } = useForm({ resolver: yupResolver(schema) });
 
   const onSubmit = (data) => {
     console.log(data);
-    console.log(errors);
+    reset();
   };
   return (
     <div className="container">

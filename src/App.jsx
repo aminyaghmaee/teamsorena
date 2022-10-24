@@ -10,6 +10,7 @@ import Signup from "./components/signup/signup";
 import Reshteha from "./components/reshteha/reshteha";
 import Barnameha from "./components/barnameha/barnameha";
 import Qazai from "./components/qazai/qazai";
+import Dashboard from "./components/dashboard/dashboard";
 function App() {
   const [result, setResult] = useState("?");
   const [ideal, setIdeal] = useState("?");
@@ -33,7 +34,7 @@ function App() {
           />
         </Route>
         <Route path="/login" element={<Login />}></Route>
-        <Route path="/signup" element={<Signup/>}></Route>
+        <Route path="/signup" element={<Signup />}></Route>
         <Route
           path="/mohasebe"
           element={
@@ -46,9 +47,10 @@ function App() {
           }
         />
         <Route path="/morabian" element={<Morabian />} />
-        <Route path= "/reshteha" element={<Reshteha/>}/>
-        <Route path= "/barnameha" element={<Barnameha/>}/>
-        <Route path= "/qazai" element={<Qazai/>}/>
+        <Route path="/reshteha" element={<Reshteha />} />
+        <Route path="/barnameha" element={<Barnameha />} />
+        <Route path="/qazai" element={<Qazai />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </div>
   );
